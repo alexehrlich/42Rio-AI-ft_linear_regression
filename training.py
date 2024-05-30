@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+#read the data from the csv into a panda data frame
 df = pd.read_csv('data.csv')
-df_sorted = df.sort_values(by='km')
 
 def cost_function(df, intercept, slope):
 	cost = 0
@@ -67,16 +67,19 @@ def gradient_descent(df):
 	return theta0_original, theta1_original
 
 # Run gradient descent and get the optimized thetas
-theta0, theta1 = gradient_descent(df_sorted)
+theta0, theta1 = gradient_descent(df)
 
 print('Optimized thetas: ', theta0, theta1)
+with open('model', 'w') as file:
+	file.write('theta_0=' + str(theta0) + '\n')
+	file.write('theta_1=' + str(theta1))
 
 # Plotting the data points
 plt.figure(figsize=(10, 6))
-plt.plot(df_sorted['km'], df_sorted['price'], marker='o', linestyle='None', label='Data points')
+plt.plot(df['km'], df['price'], marker='o', linestyle='None', label='Data points')
 
 # Plotting the regression line
-x_values = np.linspace(df_sorted['km'].min(), df_sorted['km'].max(), 100)
+x_values = np.linspace(df['km'].min(), df['km'].max(), 100)
 y_values = theta0 + theta1 * x_values
 plt.plot(x_values, y_values, color='red', label='Regression line')
 
