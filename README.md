@@ -3,7 +3,7 @@ This project is about creating simple machine learing model in form of regressio
 
 ## Training the model with gradient descent
 The training involves finding the regression line which fits the given training data the best, meaning that the squared sum of the errors - the cost - made is at its minimum. The cost function therefore is: 
-$\sqrt{3x-1}+(1+x)^2$
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
 The regression line is described by $estimated price(km) = Θ_0 + Θ_1 * km$.
 The minimal cost is determined with the gradient descent algorithm by testing different values for $Θ_0$ and $Θ_1$. 
