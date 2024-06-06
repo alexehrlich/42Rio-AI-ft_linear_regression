@@ -1,3 +1,5 @@
+# Under construction :)
+
 # ft_linear_regression
 This project is about creating simple machine learing model in form of regression line to make predictions of a car price depending on the milage. The first program trains the model by finding the optimal slope and intercept of the regression using the gradient descent algorithm. The second program uses that trained model to make a prediction.
 
