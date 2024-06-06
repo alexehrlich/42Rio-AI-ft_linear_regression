@@ -2,7 +2,8 @@
 This project is about creating simple machine learing model in form of regression line to make predictions of a car price depending on the milage. The first program trains the model by finding the optimal slope and intercept of the regression using the gradient descent algorithm. The second program uses that trained model to make a prediction.
 
 ## Training the model with gradient descent
-The training involves finding the regression line which fits the given training data the best, meaning that the squared sum of the errors - the cost - made is at its minimum. The cost function therefore is: 
+The training involves finding the regression line which fits the given training data the best, meaning that the squared sum of the errors - the cost - made is at its minimum. For different regression lines, we get different costs. Therefore the cost function depends on the intercept($Θ_0$) and the slope ($Θ_1$):
+$$cost($Θ_1$, $Θ_1$) $$
 $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
 The regression line is described by $estimated price(km) = Θ_0 + Θ_1 * km$.
