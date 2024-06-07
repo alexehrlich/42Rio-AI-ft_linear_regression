@@ -18,20 +18,9 @@ The cost function is defines as:
 
 ![lin_reg1](https://raw.githubusercontent.com/alexehrlich/42Rio-AI-ft_linear_regression/main/images/formulas.png)
 
-where:
-- $m$ is the number of training examples,
-- \( h_\theta(x) \) is the hypothesis function defined as \( h_\theta(x) = \theta_0 + \theta_1 x \),
-- \( x^{(i)} \) is the input feature of the \(i\)-th training example,
-- \( y^{(i)} \) is the actual output of the \(i\)-th training example.
+The objective is to find the values of \(\theta_0\) and \(\theta_1\) that minimize this cost function. In other words finding the tangent of the cost function being close to 0. By doing so, we ensure that the regression line we obtain is the one that best fits the training data, resulting in the smallest possible sum of squared errors. This can be visualized as follos:
+![lin_reg1](https://raw.githubusercontent.com/alexehrlich/42Rio-AI-ft_linear_regression/main/images/cost_price_dependency.png)
 
-The objective is to find the values of \(\theta_0\) and \(\theta_1\) that minimize this cost function. By doing so, we ensure that the regression line we obtain is the one that best fits the training data, resulting in the smallest possible sum of squared errors.
-
-
-The regression line is described by $estimated price(km) = Θ_0 + Θ_1 * km$.
-The minimal cost is determined with the gradient descent algorithm by testing different values for $Θ_0$ and $Θ_1$. 
-
-The algorithm works as follows:
-- Set $Θ_0$ and $Θ_1$ to 0.
 
 ## Installation
 
