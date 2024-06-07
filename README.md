@@ -20,7 +20,7 @@ The cost function is defines as:
 
 The objective is to find the values of \(\theta_0\) and \(\theta_1\) that minimize this cost function. In other words finding the tangent of the cost function being close to 0. By doing so, we ensure that the regression line we obtain is the one that best fits the training data, resulting in the smallest possible sum of squared errors. This can be visualized as follows:
 
-![lin_reg2](https://raw.githubusercontent.com/alexehrlich/42Rio-AI-ft_linear_regression/main/images/cost_price_dependency.png)
+![lin_reg1](https://raw.githubusercontent.com/alexehrlich/42Rio-AI-ft_linear_regression/main/images/cost_price_dependency.png)
 
 
 ## Installation
