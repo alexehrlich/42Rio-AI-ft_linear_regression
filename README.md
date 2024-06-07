@@ -29,13 +29,13 @@ Finding the optimal values for $Θ_0$ and $Θ_1$ can be done with gradient desce
 The algorithm works like this:
 1. Set $Θ_0$ and $Θ_1$ to a random value, in our case to 0.
 3. Define the learning rate $η$. It defines which set size we apply to the $Θ_0$ and $Θ_1$ to update them during the learning process.
-4. Define a threshold for a satisfiyng convergence and a max iteration limit to stop the algorithm.
-5. Compute the current gradients with the formulas from above. (Looks harder that it actually is in code :) )
+4. Define a threshold for a satisfying convergence and a max iteration limit to stop the algorithm.
+5. Compute the current gradients with the formulas from above. (Looks harder than it actually is :) )
 6. If both gradients meet the hit the threshold -> your done :)
 7. Update $Θ_0$ and $Θ_1$ with the step size. The step size is the product of the current gradient and the step size. Repeat from step 4.
 
 
-## Installation
+## Usage
 
 Provide step-by-step instructions on how to install and set up your project. Include any prerequisites or dependencies needed.
 
