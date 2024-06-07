@@ -38,7 +38,8 @@ The algorithm works like this:
 1. Run `make setup` to install all the dependencies in a virtualenv.
 2. Run `make training`. It installs the necessary dependencies in the venv. The training result is safed to a seperate `model` file. The program also plots the data, the normalized data and the cost function.
   ![lin_reg1](https://raw.githubusercontent.com/alexehrlich/42Rio-AI-ft_linear_regression/main/images/plots.png)
-4. Run `make prediction`. It reads the file and asks you for a milage to estimate a price. 'exit' ends the program.
+4. Run `cat model` to see the model with the timestamp.
+5. Run `make prediction`. It reads the file and asks you for a milage to estimate a price. 'exit' ends the program.
 
 ## Resources
 
