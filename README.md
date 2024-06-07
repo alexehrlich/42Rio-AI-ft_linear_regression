@@ -18,9 +18,13 @@ The cost function is defines as:
 
 ![lin_reg1](https://raw.githubusercontent.com/alexehrlich/42Rio-AI-ft_linear_regression/main/images/formulas.png)
 
-The objective is to find the values of \(\theta_0\) and \(\theta_1\) that minimize this cost function. In other words finding the tangent of the cost function being close to 0. By doing so, we ensure that the regression line we obtain is the one that best fits the training data, resulting in the smallest possible sum of squared errors. This can be visualized as follows:
+The objective is to find the values of $Θ_0$ and $Θ_1$ that minimize this cost function. In other words finding the tangent of the cost function being close to 0. By doing so, we ensure that the regression line we obtain is the one that best fits the training data, resulting in the smallest possible sum of squared errors. This can be visualized as follows:
 
 ![lin_reg1](https://raw.githubusercontent.com/alexehrlich/42Rio-AI-ft_linear_regression/main/images/cost.png)
+
+Finding the optimal values for $Θ_0$ and $Θ_1$ can be done with gradient descent. To calculate the tangent for the different values for $Θ_0$ and $Θ_1$ we have to do partial derivation with respect to $Θ_0$ and $Θ_1$ - the so called gradients. Applying the chain rule we get those formulas for the gradients:
+
+![lin_reg1](https://raw.githubusercontent.com/alexehrlich/42Rio-AI-ft_linear_regression/main/images/gradients.png)
 
 
 ## Installation
