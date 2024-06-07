@@ -59,7 +59,7 @@ def gradient_descent(normalized_df):
 
 	return theta0, theta1
 
-
+print("Train the model with the data from data.csv...\n")
 #read the data from the csv into a panda data frame
 df = pd.read_csv('data.csv')
 
@@ -82,6 +82,7 @@ with open('model', 'w') as file:
 	file.write('\ttheta1=' + str(theta1) + '\n')
 	file.close()
 
+print("Generating the plots...\n")
 # Generate the grid for intercept and slope values. Here linespace creates
 # a line from 0 to 20000 with 100 evenly spaced values. 
 intercept_values = np.linspace(0, 20000, 100)
