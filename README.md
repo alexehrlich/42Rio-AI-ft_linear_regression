@@ -11,18 +11,15 @@ Since the price and the milage values differ immensly in their range, it is nece
 After some research I found out especially for this algorithm the Z-Score-Normalization is the way to do it.
 
 ## Training the model with gradient descent
-## Linear Regression and Cost Function
 
-When training a linear regression model, the goal is to find the regression line that best fits the given training data. This means minimizing the sum of the squared errors, which is known as the cost. Different regression lines will yield different costs, as the cost function depends on both the intercept (\(\theta_0\)) and the slope (\(\theta_1\)).
+When training a linear regression model, the goal is to find the regression line that best fits the given training data. This means minimizing the sum of the squared errors, which is known as the cost. Different regression lines will yield different costs, as the cost function depends on both the intercept $Θ_0$ and the slope $Θ_1$.
 
-In mathematical terms, the cost function \(J(\theta_0, \theta_1)\) for linear regression is defined as:
+The cost function is defines as:
 
-$$
-J(\theta_0, \theta_1) = \frac{1}{2m} \sum_{i=1}^{m} \left( h_\theta(x^{(i)}) - y^{(i)} \right)^2
-$$
+IMAGE
 
 where:
-- \( m \) is the number of training examples,
+- $m$ is the number of training examples,
 - \( h_\theta(x) \) is the hypothesis function defined as \( h_\theta(x) = \theta_0 + \theta_1 x \),
 - \( x^{(i)} \) is the input feature of the \(i\)-th training example,
 - \( y^{(i)} \) is the actual output of the \(i\)-th training example.
