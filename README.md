@@ -1,5 +1,3 @@
-# Under construction :)
-
 # ft_linear_regression
 This project is about creating simple linear regression machine learing model to make predictions of a car price depending on the milage. The first program trains the model by finding the optimal slope and intercept of the regression line using the gradient descent algorithm. The second program uses that trained model to make a prediction.
 
@@ -42,3 +40,6 @@ The algorithm works like this:
   ![lin_reg1](https://raw.githubusercontent.com/alexehrlich/42Rio-AI-ft_linear_regression/main/images/plots.png)
 4. Run `prediction.py <milage>`. It reads the file and prompts the prediction.
 
+## Resources
+
+- https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3DsDv4f4s2SB8&ved=2ahUKEwj31drs-MmGAxXqqZUCHUoPKEwQwqsBegQIERAF&usg=AOvVaw1cuyUDKXQnY4zSgUlDb4G-
