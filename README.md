@@ -16,7 +16,7 @@ When training a linear regression model, the goal is to find the regression line
 
 The cost function is defines as:
 
-![lin_reg1](https://raw.githubusercontent.com/alexehrlich/42Rio-AI-ft_linear_regression/main/images/cost_func.png)
+![lin_reg1](https://raw.githubusercontent.com/alexehrlich/42Rio-AI-ft_linear_regression/main/images/formulas.png)
 
 where:
 - $m$ is the number of training examples,
