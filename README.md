@@ -42,4 +42,4 @@ The algorithm works like this:
 
 ## Resources
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)]([http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3DsDv4f4s2SB8&ved=2ahUKEwj31drs-MmGAxXqqZUCHUoPKEwQwqsBegQIERAF&usg=AOvVaw1cuyUDKXQnY4zSgUlDb4G-))
+[Gradient Descent, Step by Step](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3DsDv4f4s2SB8&ved=2ahUKEwj31drs-MmGAxXqqZUCHUoPKEwQwqsBegQIERAF&usg=AOvVaw1cuyUDKXQnY4zSgUlDb4G-)
