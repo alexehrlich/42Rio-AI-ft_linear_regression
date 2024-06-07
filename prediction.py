@@ -43,5 +43,5 @@ while (42):
 	estimated_price = theta0 + milage * theta1
 	if estimated_price < 0:
 		estimated_price = 0
-	print("The estimated price for " + str(milage) + "[km] is: " + str(estimated_price) + "\n")
+	print("The estimated price for " + str(milage) + "[km] is: " + str(round(estimated_price, 2)) + "\n")
 
