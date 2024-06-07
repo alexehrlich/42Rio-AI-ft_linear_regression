@@ -38,7 +38,7 @@ The algorithm works like this:
 ## Usage
 1. Run `make setup` to install all the dependencies in a virtualenv.
 2. Run `make training`. It installs the necessary dependencies in the venv. The training result is safed to a seperate `model` file. The program also plots the data, the normalized data and the cost function.
-  ![lin_reg1](https://raw.githubusercontent.com/alexehrlich/42Rio-AI-ft_linear_regression/main/images/plot.png)
+  ![lin_reg1](https://raw.githubusercontent.com/alexehrlich/42Rio-AI-ft_linear_regression/main/images/plots.png)
 3. Run `prediction.py <milage>`. It reads the file and prompts the prediction.
 
 `make` alone combines the setup and the training.
