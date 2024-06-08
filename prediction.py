@@ -2,22 +2,23 @@ import os
 import sys
 
 model_path = './model'
-
+model_exists = False
 
 if not os.path.exists(model_path):
 	print('Model does not exist. First run <training.py>')
-	exit(1)
-thetas = {}
-with open(model_path, 'r') as file:
-	content = file.read()
-	lines = content.split('\n')
+	thetas = {'theta0': 0, 'theta1': 0}
+else:
+	model_exists = True
+	thetas = {}
+	with open(model_path, 'r') as file:
+		content = file.read()
+		lines = content.split('\n')
 
-	for line in lines:
-		if "=" in line:
-			key, value = line.split("=")
-			thetas[key.strip()] = float(value)
-	
-	file.close()
+		for line in lines:
+			if "=" in line:
+				key, value = line.split("=")
+				thetas[key.strip()] = float(value)
+		file.close()
 
 theta0 = thetas.get("theta0")
 theta1 = thetas.get("theta1")
@@ -43,5 +44,6 @@ while (42):
 	estimated_price = theta0 + milage * theta1
 	if estimated_price < 0:
 		estimated_price = 0
-	print("The estimated price for " + str(milage) + "[km] is: " + str(round(estimated_price, 2)) + "\n")
-
+	print("The estimated price for " + str(milage) + "[km] is: " + str(round(estimated_price, 2)))
+	if not model_exists:
+		print('[WARNING: Model does not exist. First run <training.py>]')
