@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from normalizer import DataNormalizer
 from datetime import datetime
+import os
 
 
 # This function adds up all the error (Squared residuals) for the known data points wie have for
@@ -60,6 +61,11 @@ def gradient_descent(normalized_df):
 	return theta0, theta1
 
 print("Train the model with the data from data.csv...\n")
+
+if not os.path.exists("./data.csv"):
+	print('./data.csv does not exist')
+	exit(1)
+
 #read the data from the csv into a panda data frame
 df = pd.read_csv('data.csv')
 

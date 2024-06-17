@@ -2,7 +2,7 @@ all: setup training
 
 setup:
 	@echo "Installing the dependencies"
-	@virtualenv venv
+	@python3 -m venv venv
 	@. venv/bin/activate && pip install -r ./requirements.txt
 
 training:
